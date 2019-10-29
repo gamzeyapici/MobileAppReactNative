@@ -23,7 +23,7 @@ class DetailScreen extends Component {
     return (
       <ScrollView style={{ backgroundColor: "white" }}>
         <View style={{
-          margin: 15, flex: 1, marginTop: 0,
+          margin: 15,  flex: 1,
           flexDirection: 'row', flexWrap: 'wrap', 
           alignItems: 'flex-start', justifyContent: "space-between"
         }}>
@@ -31,8 +31,8 @@ class DetailScreen extends Component {
           style={{ width: "100%", height: 150 }}
           source={{ uri: photo.thumbnailUrl }}
         />
-        <Text style={{ color: "#000", textAlign: "left", }}>ID: {photo.id}</Text>
-        <Text style={{ color: "black", textAlign: "left", }}>Title: {photo.title}</Text>
+        <Text style={{ color: "#000", textAlign: "left", marginTop: 10 }}>ID: {photo.id}</Text>
+        <Text style={{ color: "black", textAlign: "left", marginTop: 10}}>Title: {photo.title}</Text>
         </View>
 
       </ScrollView>
